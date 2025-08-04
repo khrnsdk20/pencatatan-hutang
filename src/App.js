@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Header from './components/Header';
+import Form from './components/Form';
+import Table from './components/Table';
+import Footer from './components/Footer';
 
 function App() {
+  const [data, setData] = useState([]);
+
+  const handleAdd = (item) => {
+    setData((prev) => [...prev, item]);
+  };
+
+  const handleDelete = (target) => {
+    setData((prev) => prev.filter((item) => item !== target));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gradient-to-b from-red-500 to-pink-200">
+      <Header />
+      <Form onAdd={handleAdd} />
+      <Table data={data} onDelete={handleDelete} />
+      <Footer />
     </div>
   );
 }
