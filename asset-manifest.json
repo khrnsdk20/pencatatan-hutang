@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pencatatan-hutang/static/css/main.b8078921.css",
+    "main.js": "/pencatatan-hutang/static/js/main.e8807c3c.js",
+    "static/js/453.8cdb7770.chunk.js": "/pencatatan-hutang/static/js/453.8cdb7770.chunk.js",
+    "index.html": "/pencatatan-hutang/index.html",
+    "main.b8078921.css.map": "/pencatatan-hutang/static/css/main.b8078921.css.map",
+    "main.e8807c3c.js.map": "/pencatatan-hutang/static/js/main.e8807c3c.js.map",
+    "453.8cdb7770.chunk.js.map": "/pencatatan-hutang/static/js/453.8cdb7770.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8078921.css",
+    "static/js/main.e8807c3c.js"
+  ]
+}
